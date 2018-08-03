@@ -1,0 +1,21 @@
+{
+  "name": "study_world",
+  "version": "1.0.0",
+  "description": "test_task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "author": "iats",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "gulp-clean-css": "^3.9.4",
+    "gulp-plumber": "^1.2.0"
+  }
+}

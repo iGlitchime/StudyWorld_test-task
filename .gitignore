@@ -1,0 +1,6 @@
+# files to ignore
+
+.idea/
+node_modules
+surfers.zip
+package-lock.json

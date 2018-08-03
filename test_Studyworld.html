@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Author24</title>
+  <!-- TODO можно пользоваться препроцессорами -->
+  <link rel="stylesheet" href="build/style.css">
+</head>
+<body>
+
+Во всех задачах желательно не менять существующуу верстку
+
+1. Сверстать адаптивно, ожидаемый результат, желательно без картинок:
+- Desktop http://take.ms/nnDQL http://take.ms/Cwagn
+- Tablet http://take.ms/UlXFB
+
+<div class="block1">
+  <div class="block1__child">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium dicta dolor
+    dolorum in laboriosam mollitia?
+  </div>
+  <div class="block1__child">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium dicta dolor
+    dolorum in laboriosam mollitia?
+  </div>
+  <div class="block1__child">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium dicta dolor
+    dolorum in laboriosam mollitia?
+  </div>
+  <div class="block1__child">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium dicta dolor
+    dolorum in laboriosam mollitia?
+  </div>
+</div>
+
+2. Сверстать адаптивно, __child обязательно должен быть position: relative, ожидаемый результат:
+- Desktop http://take.ms/eY3ba
+- Tablet http://take.ms/9JAbZ
+<div class="block2">
+  <div class="block2__child">1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam, architecto
+    aspernatur aut cumque dolorum est, et excepturi facilis, ipsam itaque natus nihil odio rem sed ut vel veritatis
+    voluptatum?
+  </div>
+  <div class="block2__child">2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam, architecto
+    aspernatur aut cumque dolorum est, et excepturi facilis, ipsam itaque natus nihil odio rem sed ut vel veritatis
+    voluptatum?
+  </div>
+  <div class="block2__child">3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam, architecto
+    aspernatur aut cumque dolorum est, et excepturi facilis, ipsam itaque natus nihil odio rem sed ut vel veritatis
+    voluptatum?
+  </div>
+  <div class="block2__child">4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam, architecto
+    aspernatur aut cumque dolorum est, et excepturi facilis, ipsam itaque natus nihil odio rem sed ut vel veritatis
+    voluptatum?
+  </div>
+  <div class="block2__child">5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam, architecto
+    aspernatur aut cumque dolorum est, et excepturi facilis, ipsam itaque natus nihil odio rem sed ut vel veritatis
+    voluptatum?
+  </div>
+  <div class="block2__child">6 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam, architecto
+    aspernatur aut cumque dolorum est, et excepturi facilis, ipsam itaque natus nihil odio rem sed ut vel veritatis
+    voluptatum?
+  </div>
+</div>
+
+3. Сверстать, ожидается следующее поведение:
+- html lang="ru" 99.99 Р
+- html lang="en" $ 99.99
+<div class="value">99.99</div>
+
+4. Сверстать, вложеные элементы должны равномерно распределяться по все ширине родителя в зависимости от кол-ва
+элементов.
+<div class="block3">
+  <div class="block3__child">50%</div>
+  <div class="block3__child">50%</div>
+</div>
+<div class="block3">
+  <div class="block3__child">33.33%</div>
+  <div class="block3__child">33.33%</div>
+  <div class="block3__child">33.33%</div>
+</div>
+<div class="block3">
+  <div class="block3__child">25%</div>
+  <div class="block3__child">25%</div>
+  <div class="block3__child">25%</div>
+  <div class="block3__child">25%</div>
+</div>
+<div class="block3">
+  <div class="block3__child">20%</div>
+  <div class="block3__child">20%</div>
+  <div class="block3__child">20%</div>
+  <div class="block3__child">20%</div>
+  <div class="block3__child">20%</div>
+</div>
+
+5. Написать конструктор
+
+<script>
+          try {
+              var Singleton = function Singleton() {
+                  if (Singleton.i) {
+                      return Singleton.i;
+                  }
+                  Singleton.i = this;
+              };
+
+              var a = new Singleton();
+              var b = new Singleton();
+              var c = new Singleton();
+              console.log(a === b, a === c, b === c); // true
+              console.log(a instanceof Singleton);    // true
+              console.log(b instanceof Singleton);    // true
+          } catch(e) {
+              console.warn(e); // check
+          }
+</script>
+
+</body>
+</html>
